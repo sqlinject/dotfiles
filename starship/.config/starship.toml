@@ -1,0 +1,44 @@
+# Minimal "data-console" prompt: path, git (only in a repo), slow-command time, pink chevron.
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+command_timeout = 500
+palette = "callum_slate"
+
+format = "$directory$git_branch$git_status$cmd_duration$character"
+
+# Edit colours here (mirrors lib/palette.sh and windows-terminal/callum-slate.json).
+[palettes.callum_slate]
+bg    = "#212733"
+fg    = "#c3cddb"
+dim   = "#4a5a70"
+red   = "#e0574f"
+amber = "#d9b45b"
+green = "#6fb47e"
+teal  = "#5fc9c6"
+blue  = "#5b9bd8"
+pink  = "#e060a3"
+
+[character]
+success_symbol = "[❯](bold pink)"
+error_symbol = "[❯](bold red)"
+
+[directory]
+style = "blue"
+truncation_length = 3
+truncation_symbol = "…/"
+format = "[$path]($style) "
+
+[git_branch]
+symbol = ""
+style = "dim"
+format = "[$branch]($style) "
+
+[git_status]
+style = "amber"
+format = "([$all_status$ahead_behind]($style) )"
+
+[cmd_duration]
+min_time = 2000
+style = "dim"
+format = "[$duration]($style) "

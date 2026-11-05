@@ -1,0 +1,23 @@
+# Managed in ~/dotfiles (package: git).
+# Identity lives in ~/.gitconfig.local (untracked) -- see the include below.
+# Template for that file:
+#   [user]
+#       name  = Your Name
+#       email = you@example.com
+
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[core]
+	autocrlf = input
+
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+
+[include]
+	path = ~/.gitconfig.local

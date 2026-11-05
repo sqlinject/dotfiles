@@ -1,0 +1,25 @@
+{
+    "name": "Callum Slate",
+    "background": "#212733",
+    "foreground": "#c3cddb",
+    "cursorColor": "#c3cddb",
+    "selectionBackground": "#3a4660",
+
+    "black": "#2b3342",
+    "red": "#e0574f",
+    "green": "#6fb47e",
+    "yellow": "#d9b45b",
+    "blue": "#5b9bd8",
+    "purple": "#e060a3",
+    "cyan": "#5fc9c6",
+    "white": "#c3cddb",
+
+    "brightBlack": "#4a5a70",
+    "brightRed": "#e8766f",
+    "brightGreen": "#8cc799",
+    "brightYellow": "#e6c982",
+    "brightBlue": "#7fb2e5",
+    "brightPurple": "#ea85bb",
+    "brightCyan": "#84d9d6",
+    "brightWhite": "#e6ecf5"
+}

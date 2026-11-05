@@ -1,0 +1,8 @@
+zsh
+stow
+git
+curl
+fzf
+ripgrep
+bat
+eza
