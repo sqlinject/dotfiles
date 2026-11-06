@@ -25,6 +25,7 @@ Then apply the Windows side (font + colours), see `windows-terminal/README.md`.
 | `git/` | `.gitconfig` (no identity; includes `~/.gitconfig.local`) |
 | `lib/palette.sh`, `lib/palette.py` | Semantic colours for your own scripts (not stowed) |
 | `windows-terminal/` | Colour scheme + `apply.ps1` (not stowed) |
+| `vscode/` | VS Code colour/font overrides to merge into Windows `settings.json` (not stowed) |
 
 ## Untracked per-machine files
 
@@ -33,9 +34,9 @@ Then apply the Windows side (font + colours), see `windows-terminal/README.md`.
 
 ## Changing the palette
 
-Hex values live in four places; change them together:
+Hex values live in five places; change them together:
 `lib/palette.sh`, `lib/palette.py`, `starship/.config/starship.toml` (`[palettes.callum_slate]`),
-and `windows-terminal/callum-slate.json` (then re-run `apply.ps1`).
+`windows-terminal/callum-slate.json` (then re-run `apply.ps1`), and `vscode/settings.json`.
 
 Semantics: red = bad, amber = warning, green = good, teal = system tags, blue = paths,
 pink = prompt chevron, dim = secondary text.
